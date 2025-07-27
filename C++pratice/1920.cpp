@@ -36,6 +36,9 @@ int main() {
 		vec1[i] = num;;
 	}
 	//벡터 오름차순 정렬
+
+	//vec1의 첫 번째 요소를 가리키는 iterator
+	//&vec1[0]과 유사하게 동작함 (하지만 타입은 iterator)
 	sort(vec1.begin(), vec1.end());
 
 	cin >> m;
