@@ -16,7 +16,7 @@ using namespace std;
 
 int solve(int n, int r, int c) {
 	if (n == 0) return 0;
-	
+
 	int half = 1 << (n - 1);
 	int area = half * half;
 
@@ -24,7 +24,7 @@ int solve(int n, int r, int c) {
 		return solve(n - 1, r, c); //제 1사분면은 좌표 그대로
 	}
 	else if (r < half && c >= half) {
-		return area + solve(n - 1, r, c-half); //제 2사분면으로 c값 지역 좌표 조정
+		return area + solve(n - 1, r, c - half); //제 2사분면으로 c값 지역 좌표 조정
 	}
 	else if (r >= half && c < half) {
 		return 2 * area + solve(n - 1, r - half, c); //제 3사분면으로 r값 지역 좌표 조정
