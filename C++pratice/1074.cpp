@@ -17,6 +17,10 @@ using namespace std;
 int solve(int n, int r, int c) {
 	if (n == 0) return 0;
 
+	// << 비트 이동 연산자
+	// <<는 왼쪽 쉬프트
+	// 1 << k는 왼쪽으로 1을 k비트 이동 하여
+	//2^k와 같게 됨
 	int half = 1 << (n - 1);
 	int area = half * half;
 
