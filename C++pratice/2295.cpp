@@ -14,6 +14,12 @@ int main() {
 	vector<int>two_sum;
 
 	//two_sum 구할 때: O(n^2)
+	/*
+	a+b+c =d
+	d-c = a+b
+	위에 조건을 만족할 두수 a, b의 가능한 모든 조합을 저장
+	*/
+
 	for (int i = 0; i < n; i++) {
 		for (int j = i; j < n; j++) {
 			two_sum.push_back(U[i] + U[j]);
@@ -41,6 +47,7 @@ int main() {
 	그 이상 큰 값은 더이상 존재할 수 없음
 	 a+b+c =d
 	 d-c = a+b
+	값이 가장 큰 쪽 부터 차례대로  d-c의 조합을 구해 기존의 a+b의 조합과 같은게 있는지 비교
 	*/
 	/*
 	binary_search()는 정렬된 배열에서 수행되므로 O(log n²) = O(log n)
