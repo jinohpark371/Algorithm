@@ -8,8 +8,8 @@ int dx[4] = { 0 , 0, -1 ,1 }; //방향 좌표: 하 상
 int dy[4] = { -1 , 1 , 0 , 0 }; //방향 좌표: 좌 우
 int min_distance[100][100] = { -1 }; //모든 1좌표 최소거리
 queue<pair<int, int>> q;
-int board[100][100];
-int visited[100][100];
+int board[100][100]; //좌표배열
+int visited[100][100]; //방문 여부 확인 배열
 int n, m;
 string row;
 
