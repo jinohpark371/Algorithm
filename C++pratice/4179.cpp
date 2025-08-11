@@ -6,11 +6,11 @@
 #define Y second
 using namespace std;
 
-int dx[4] = {0, 0, -1, 1};
-int dy[4] = {-1, 1, 0, 0};
+int dx[4] = { 0, 0, -1, 1 };
+int dy[4] = { -1, 1, 0, 0 };
 string board[1000];
 int dist1[1000][1000];
-int dist2[1000][1000]; 
+int dist2[1000][1000];
 int r, c;
 
 int main() {
@@ -20,11 +20,11 @@ int main() {
         cin >> board[i];
     }
 
-    
+
     for (int i = 0; i < r; i++) {
         //각 행 -1로 채우기
         fill(dist1[i], dist1[i] + c, -1);
-        fill(dist2[i], dist2[i] + c, -1); 
+        fill(dist2[i], dist2[i] + c, -1);
     }
 
     queue<pair<int, int>> q1;
@@ -48,7 +48,7 @@ int main() {
     //불에 대한 bfs로 각 이동가능한 각 좌표에 대해서 최단 시간계산
     while (!q1.empty()) {
         auto cursor = q1.front(); q1.pop();
-        
+
         //접근 가능 좌표에 대한 계산
         for (int dir = 0; dir < 4; dir++) {
             int nx = dx[dir] + cursor.X;
@@ -68,7 +68,7 @@ int main() {
     }
 
 
-        //지훈이에 대한 bfs로 각 좌표에 대해 도달가능한 최단 시간계산
+    //지훈이에 대한 bfs로 각 좌표에 대해 도달가능한 최단 시간계산
     while (!q2.empty()) {
         auto cursor = q2.front(); q2.pop();
 
