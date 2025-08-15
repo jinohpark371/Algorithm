@@ -199,7 +199,8 @@
     <ClCompile Include="2178.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="2230.cpp" />
+    <ClCompile Include="2230_1.cpp" />
+    <ClCompile Include="2230_2.cpp" />
     <ClCompile Include="2295.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

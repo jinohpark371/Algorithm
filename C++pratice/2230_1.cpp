@@ -27,7 +27,7 @@ int main() {
 		while (diff >= m && left<right) {
 			//현재 알고 있는 최솟값과 현재 구해진 최솟값을 비교하여 최솟값을 갱신
 			mindiff = min(mindiff, vec[right] - vec[left]);
-			//“오른쪽 포인터 확장 → 조건 만족 시 왼쪽 포인터 축소
+			//오른쪽 포인터 확장 → 조건 만족 시 왼쪽 포인터 축소
 			//다음 차이값으로 최솟값 갱신을 위한 비교
 			left++;
 			diff= vec[right] - vec[left];
