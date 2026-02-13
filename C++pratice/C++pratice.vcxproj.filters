@@ -312,6 +312,15 @@
     <ClCompile Include="15649.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="phoneketmon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1181.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1753.h">
