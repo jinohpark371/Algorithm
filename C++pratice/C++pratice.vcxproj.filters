@@ -456,10 +456,13 @@
     <ClCompile Include="truck.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1943_1.cpp">
+    <ClCompile Include="1934_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1934.cpp">
+    <ClCompile Include="1934_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1935.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
