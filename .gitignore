@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Compiled binaries from local build/run (g++ output, Code Runner, etc.)
+*.exe
+*.out
+*.o
+
 # User-specific files
 *.rsuser
 *.suo

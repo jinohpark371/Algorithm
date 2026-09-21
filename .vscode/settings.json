@@ -1,0 +1,6 @@
+{
+  "code-runner.executorMap": {
+    "c": "cd \"$dir\" && gcc \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" && \"%TEMP%\\$fileNameWithoutExt.exe\"",
+    "cpp": "cd \"$dir\" && g++ \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" -std=c++17 && \"%TEMP%\\$fileNameWithoutExt.exe\""
+  }
+}
