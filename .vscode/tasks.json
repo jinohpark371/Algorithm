@@ -3,7 +3,7 @@
     {
       "type": "cppbuild",
       "label": "C/C++: g++.exe 활성 파일 빌드",
-      "command": "C:\\MinGW\\bin\\g++.exe",
+      "command": "C:\\Users\\박진오\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\g++.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",

@@ -1,6 +1,6 @@
 {
   "code-runner.executorMap": {
-    "c": "cd \"$dir\" && gcc \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" && \"%TEMP%\\$fileNameWithoutExt.exe\"",
-    "cpp": "cd \"$dir\" && g++ \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" -std=c++17 && \"%TEMP%\\$fileNameWithoutExt.exe\""
+    "c": "cd \"$dir\" && \"C:\\Users\\박진오\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe\" \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" && \"%TEMP%\\$fileNameWithoutExt.exe\"",
+    "cpp": "cd \"$dir\" && \"C:\\Users\\박진오\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\g++.exe\" \"$fileName\" -o \"%TEMP%\\$fileNameWithoutExt.exe\" -std=c++17 && \"%TEMP%\\$fileNameWithoutExt.exe\""
   }
 }
