@@ -4,23 +4,21 @@ using namespace std;
 
 vector<string> board(100);
 
-bool isRowPal(int x, int y, int len)
+// line행에서 start열부터 len 길이
+bool isRowPal(int line, int start, int len)
 {
-  for (int l = y, r = y + len - 1; l < r; l++, r--)
-  {
-    if (board[x][l] != board[x][r])
+  for (int l = start, r = start + len - 1; l < r; l++, r--)
+    if (board[line][l] != board[line][r])
       return false;
-  }
   return true;
 }
 
-bool isColPal(int x, int y, int len)
+// line열에서 start행부터 len 길이
+bool isColPal(int line, int start, int len)
 {
-  for (int l = x, r = x + len - 1; l < r; l++, r--)
-  {
-    if (board[l][y] != board[r][y])
+  for (int l = start, r = start + len - 1; l < r; l++, r--)
+    if (board[l][line] != board[r][line])
       return false;
-  }
   return true;
 }
 
@@ -43,7 +41,7 @@ int main()
       {
         for (int y = 0; y + len <= 100; y++)
         {
-          if (isRowPal(x, y, len) || isColPal(y, x, len))
+          if (isRowPal(x, y, len) || isColPal(x, y, len))
           {
             found = true;
             break;
